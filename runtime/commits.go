@@ -107,7 +107,7 @@ func walkCommits(n *parser.NodeProgram, visitor *RuntimeVisitor) (*TableData, er
 
 func metadataCommit(identifier string, commit *object.Commit) string {
 	key := ""
-	for key, _ = range builder.tables {
+	for key = range builder.tables {
 		break
 	}
 	table := key

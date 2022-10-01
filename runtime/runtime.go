@@ -247,7 +247,7 @@ func orderTable(rows []tableRow, order *parser.NodeOrder) ([]tableRow, error) {
 
 	field := order.Field
 	key := ""
-	for key, _ = range builder.tables {
+	for key = range builder.tables {
 		break
 	}
 	table := key
